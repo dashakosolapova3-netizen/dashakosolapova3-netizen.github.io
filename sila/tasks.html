@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta
+      name="description"
+      content="СИЛА — блог Даши о силовых тренировках, технике и восстановлении"
+    >
+    <title>Задание — СИЛА</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="tasks.css">
+    <script src="app.js" defer></script>
+  </head>
+
+  <body id="top">
+    
+
+    
+    <header class="header">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        СИЛА
+        <span class="brand__caption">дневник движения</span>
+      </a>
+      
+      <button class="menu-button" aria-expanded="false" aria-controls="nav">
+        Меню ☰
+      </button>
+      
+      <nav id="nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="workouts.html">Тренировки</a>
+        <a href="diary.html">Дневник</a>
+        <a href="clubs.html">Клубы</a>
+        <a href="tasks.html" aria-current="page">Задание</a>
+      </nav>
+    </header>
+
+    
+    <nav class="crumbs" aria-label="Вы здесь">
+      <a class="crumbs__back" href="index.html">← Назад</a>
+      <ol class="crumbs__list">
+        <li><a href="index.html">Главная</a></li>
+        <li aria-current="page">Задание</li>
+      </ol>
+    </nav>
+
+    
+    <main id="main">
+      <section class="intro">
+        <span class="eyebrow">Мои учебные работы</span>
+        <h1>Задание</h1>
+        <p>Мои задания: картинка, флекс и DOM-тест.</p>
+      </section>
+
+      <section class="section" aria-labelledby="picture-title">
+        <h2 id="picture-title">1 задание — Картинка</h2>
+        <iframe
+          class="assignment-frame assignment-frame--drawing"
+          src="tasks/picture/embed.html"
+          title="1 задание — Картинка"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="section" aria-labelledby="flex-title">
+        <h2 id="flex-title">2 задание — Флекс</h2>
+        <iframe
+          class="assignment-frame assignment-frame--drawing"
+          src="tasks/flex/embed.html"
+          title="2 задание — Флекс"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="section" aria-labelledby="dom-test-title">
+        <h2 id="dom-test-title">3 задание — DOM-тест</h2>
+        <iframe
+          class="assignment-frame"
+          src="tasks/dom-test/embed.html"
+          title="3 задание — DOM-тест"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      
+      <nav class="pager" aria-label="Соседние страницы">
+        <a class="pager__link" href="clubs.html">
+          <span>← Назад</span>
+          <b>Клубы</b>
+        </a>
+      </nav>
+    </main>
+
+    
+    <footer>
+      <a class="brand" href="index.html">СИЛА ↗</a>
+      <p>Становиться сильнее. В своём темпе.</p>
+      <a href="tasks.html">Задание</a>
+      
+      <nav class="sitemap" aria-label="Карта сайта">
+        <a href="index.html">Главная</a>
+        <a href="workouts.html">Тренировки</a>
+        <a href="lower.html">Низ тела</a>
+        <a href="upper.html">Верх тела</a>
+        <a href="recovery.html">Восстановление</a>
+        <a href="diary.html">Дневник</a>
+        <a href="clubs.html">Клубы</a>
+        <a href="tasks.html">Задание</a>
+      </nav>
+      <small>© 2026 · Блог Даши · Материалы для знакомства с тренировками</small>
+    </footer>
+
+    
+    <a class="to-top" href="#top" aria-label="Наверх">↑</a>
+  </body>
+</html>

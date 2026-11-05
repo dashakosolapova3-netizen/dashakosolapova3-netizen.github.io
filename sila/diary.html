@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta
+      name="description"
+      content="СИЛА — блог Даши о силовых тренировках, технике и восстановлении"
+    >
+    <title>Дневник — СИЛА</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <script src="app.js" defer></script>
+  </head>
+
+  <body id="top">
+
+
+    <header class="header">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        СИЛА
+        <span class="brand__caption">дневник движения</span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="nav">
+        Меню ☰
+      </button>
+      
+      <nav id="nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="workouts.html">Тренировки</a>
+        <a href="diary.html" aria-current="page">Дневник</a>
+        <a href="clubs.html">Клубы</a>
+        <a href="tasks.html">Задание</a>
+      </nav>
+    </header>
+
+    <nav class="crumbs" aria-label="Вы здесь">
+      <a class="crumbs__back" href="index.html">← Назад</a>
+      <ol class="crumbs__list">
+        <li><a href="index.html">Главная</a></li>
+        <li aria-current="page">Дневник</li>
+      </ol>
+    </nav>
+
+    <main id="main">
+      
+      <section class="intro">
+        <span class="eyebrow">Личные записи за октябрь</span>
+        <h1>Маленькие шаги.<br> Настоящая работа.</h1>
+        <p>
+          Здесь собраны мои тренировки за октябрь: упражнения, рабочие веса и количество
+          подходов. Запись «3 × 10» означает три подхода по десять повторений.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="filters" role="group" aria-label="Фильтр тренировок">
+          <button data-filter="Все" aria-pressed="true">Все занятия</button>
+          <button data-filter="Низ" aria-pressed="false">Низ тела</button>
+          <button data-filter="Верх" aria-pressed="false">Верх тела</button>
+        </div>
+        <p id="count" aria-live="polite">10 занятий</p>
+        <div class="logs">
+          <article class="log" data-type="Низ">
+            <div>
+              <span class="eyebrow">Низ тела</span>
+              <h2><time datetime="2026-10-03">03.10</time></h2>
+            </div>
+            <div>
+              <p>Ягодичный мост в тренажёре Смита 58,8 кг · 3 × 10</p>
+              <p>Лестничный тренажёр 100 ккал</p>
+              <p>Сгибание ног сидя 27 кг · 3 × 12</p>
+              <p>Разведение ног в тренажёре 59 кг · 3 × 12</p>
+              <p>Мёртвый жук</p>
+              <p>Заминка</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Верх">
+            <div>
+              <span class="eyebrow">Верх тела</span>
+              <h2><time datetime="2026-10-05">05.10</time></h2>
+            </div>
+            <div>
+              <p>Суставная разминка</p>
+              <p>Подтягивания в гравитроне 27 кг · 5 × 3</p>
+              <p>Жим от груди в тренажёре 18–20 кг · 3 × 10</p>
+              <p>Обратная бабочка 15 кг · 3 × 10</p>
+              <p>Сгибание рук на бицепс 6 кг · 3 × 10</p>
+              <p>Подъём гантелей по диагонали 3 кг · 3 × 12</p>
+              <p>Заминка и упражнения на пресс</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Низ">
+            <div>
+              <span class="eyebrow">Низ тела</span>
+              <h2><time datetime="2026-10-08">08.10</time></h2>
+            </div>
+            <div>
+              <p>Ягодичный мост 72 кг · 3 × 8</p>
+              <p>Сгибание ног в тренажёре 32 кг · 3 × 10</p>
+              <p>Разгибание ног в тренажёре 34 кг · 3 × 10</p>
+              <p>Сведение ног в тренажёре 32 кг · 3 × 12</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Верх">
+            <div>
+              <span class="eyebrow">Верх тела</span>
+              <h2><time datetime="2026-10-10">10.10</time></h2>
+            </div>
+            <div>
+              <p>Эллиптический тренажёр 6 минут</p>
+              <p>Подтягивания с резинками красная и синяя резинки</p>
+              <p>Тяга снизу к груди 25 кг · 3 × 10</p>
+              <p>Тяга одной рукой в тренажёре 42 кг · 3 × 10</p>
+              <p>Сгибание рук на бицепс 5 кг · 3 × 10</p>
+              <p>Упражнения на пресс</p>
+              <p>Заминка</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Низ">
+            <div>
+              <span class="eyebrow">Низ тела</span>
+              <h2><time datetime="2026-10-17">17.10</time></h2>
+            </div>
+            <div>
+              <p>Эллиптический тренажёр 80 ккал</p>
+              <p>Ягодичный мост 76 кг · 3 × 8</p>
+              <p>Разведение ног по диагонали в тренажёре 50 кг · 3 × 12</p>
+              <p>Сведение ног в тренажёре 36 кг · 3 × 12</p>
+              <p>Сгибание ног сидя 29 кг · 3 × 12</p>
+              <p>Заминка</p>
+              <p>Баня</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Верх">
+            <div>
+              <span class="eyebrow">Верх тела</span>
+              <h2><time datetime="2026-10-21">21.10</time></h2>
+            </div>
+            <div>
+              <p>Лестничный тренажёр 100 ккал</p>
+              <p>Подтягивания с чёрной резинкой 3 × 8</p>
+              <p>Тяга к себе 25,5 кг · 3 × 10</p>
+              <p>Жим от груди в тренажёре 19 кг · 3 × 10</p>
+              <p>Сгибание рук на бицепс 6 кг · 3 × 10</p>
+              <p>Подъём рук по диагонали 4 кг · 3 × 12</p>
+              <p>Гиперэкстензия 5 и 10 кг · 3 × 10</p>
+              <p>Баня</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Низ">
+            <div>
+              <span class="eyebrow">Низ тела</span>
+              <h2><time datetime="2026-10-23">23.10</time></h2>
+            </div>
+            <div>
+              <p>Эллиптический тренажёр 150 ккал</p>
+              <p>Ягодичный мост с подушкой 60 кг · 3 × 9</p>
+              <p>Сгибание ног сидя 32 кг · 3 × 12</p>
+              <p>Разведение ног по диагонали в тренажёре 50 кг · 3 × 12</p>
+              <p>Сведение ног в тренажёре 38 кг · 3 × 12</p>
+              <p>Баня</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Верх">
+            <div>
+              <span class="eyebrow">Верх тела</span>
+              <h2><time datetime="2026-10-25">25.10</time></h2>
+            </div>
+            <div>
+              <p>Эллиптический тренажёр 110 ккал</p>
+              <p>Подтягивания с синей резинкой 3 × 8</p>
+              <p>Обратная бабочка 17,4 кг · 3 × 10</p>
+              <p>Тяга к себе 29 кг · 3 × 10</p>
+              <p>Гиперэкстензия 29 кг · 3 × 10</p>
+              <p>Подъём гантелей по диагонали 4 кг · 3 × 12</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Низ">
+            <div>
+              <span class="eyebrow">Низ тела</span>
+              <h2><time datetime="2026-10-29">29.10</time></h2>
+            </div>
+            <div>
+              <p>Эллиптический тренажёр 100 ккал</p>
+              <p>Румынская тяга 26 кг · 4 × 10</p>
+              <p>Сгибание ног сидя 32 кг · 3 × 12</p>
+              <p>Разведение ног 32 кг · 3 × 10</p>
+              <p>Сведение ног в тренажёре 41 кг · 3 × 12</p>
+              <p>Упражнения на пресс и гимнастика для таза</p>
+              <p>Баня</p>
+            </div>
+          </article>
+
+          <article class="log" data-type="Верх">
+            <div>
+              <span class="eyebrow">Верх тела</span>
+              <h2><time datetime="2026-10-31">31.10</time></h2>
+              <p>Общежитие</p>
+            </div>
+            <div>
+              <p>Разминка</p>
+              <p>Сгибание рук на бицепс 6 кг · 3 × 12</p>
+              <p>Тяга к себе 40,5 кг · 3 × 12</p>
+              <p>Подъём гантелей по диагонали 5 кг · 3 × 10</p>
+              <p>Тяга блока к груди 41 кг · 3 × 12</p>
+              <p>Разгибание рук на трицепс 13,6 кг · 3 × 15</p>
+              <p>Заминка</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      
+      <section class="section">
+        <h2>Фото к занятиям</h2>
+        
+        <div class="gallery">
+          <figure>
+            <img
+              src="assets/lower.jpg"
+              alt="Занятия на низ тела"
+              loading="lazy"
+              width="900"
+              height="600"
+            >
+            <figcaption>Занятия на низ тела</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/upper.jpg"
+              alt="Занятия на верх тела"
+              loading="lazy"
+              width="900"
+              height="600"
+            >
+            <figcaption>Занятия на верх тела</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/weights.jpg"
+              alt="Рабочие веса и гантели"
+              loading="lazy"
+              width="900"
+              height="600"
+            >
+            <figcaption>Рабочие веса и гантели</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/walk.jpg"
+              alt="Прогулка в дни отдыха"
+              loading="lazy"
+              width="900"
+              height="600"
+            >
+            <figcaption>Прогулка в дни отдыха</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      
+      <nav class="pager" aria-label="Соседние страницы">
+        <a class="pager__link" href="recovery.html">
+          <span>← Назад</span>
+          <b>Восстановление</b>
+        </a>
+        <a class="pager__link pager__link--next" href="clubs.html">
+          <span>Далее →</span>
+          <b>Клубы</b>
+        </a>
+      </nav>
+    </main>
+
+    
+    <footer>
+      <a class="brand" href="index.html">СИЛА ↗</a>
+      <p>Становиться сильнее. В своём темпе.</p>
+      <a href="tasks.html">Задание</a>
+
+      <nav class="sitemap" aria-label="Карта сайта">
+        <a href="index.html">Главная</a>
+        <a href="workouts.html">Тренировки</a>
+        <a href="lower.html">Низ тела</a>
+        <a href="upper.html">Верх тела</a>
+        <a href="recovery.html">Восстановление</a>
+        <a href="diary.html">Дневник</a>
+        <a href="clubs.html">Клубы</a>
+        <a href="tasks.html">Задание</a>
+      </nav>
+      <small>© 2026 · Блог Даши · Материалы для знакомства с тренировками</small>
+    </footer>
+
+    <a class="to-top" href="#top" aria-label="Наверх">↑</a>
+  </body>
+</html>

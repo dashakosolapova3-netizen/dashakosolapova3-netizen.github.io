@@ -1,0 +1,35 @@
+.assignment-frame {
+  display: block;
+  width: 100%;
+  height: 44rem;
+  border: 0;
+  border-radius: 1rem;
+  background: transparent;
+}
+
+.assignment-frame--drawing {
+  height: 16rem;
+}
+
+.drawing-embed {
+  margin: 0;
+  padding: 1rem 0;
+  background: transparent;
+}
+
+.drawing-embed .canvas-wrapper {
+  width: fit-content;
+  margin: 0;
+}
+
+.drawing-embed .canvas {
+  margin: 0;
+}
+
+.drawing-embed .author-caption {
+  display: none;
+}
+
+.quiz-embed {
+  --color-page: #f6f5ef;
+}

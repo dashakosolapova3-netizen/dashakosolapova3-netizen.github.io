@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM-тест</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../tasks.css">
+  </head>
+  <body class="quiz-embed">
+      <main class="page">
+
+    <header class="bar">
+      <button class="ask" id="ask" type="button"></button>
+      <button class="ask ask--restart" id="restart" type="button" hidden></button>
+    </header>
+
+    <p class="status" id="status" hidden>
+      <strong class="status__title">Вопросы закончились</strong>
+      <span class="status__score" id="score"></span>
+    </p>
+
+    <section class="board" id="board"></section>
+
+  </main>
+    <script src="script.js"></script>
+  </body>
+</html>

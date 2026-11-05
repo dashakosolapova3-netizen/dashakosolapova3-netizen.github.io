@@ -1,0 +1,205 @@
+/* Базовый контейнер 200x200px */
+.canvas {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden; /* Обрезает все, что выходит за края (солнце, облака) */
+    background-color: #ffffff;
+    margin: 20px auto;
+    border: 1px solid #eeeeee; /* Легкая рамка, чтобы видеть границы (можно убрать) */
+}
+
+/* Все внутренние элементы позиционируются абсолютно */
+.canvas div {
+    position: absolute;
+}
+
+/* солнце*/
+.sun {
+    border: 5px solid #f9ad22;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.sun-1 { width: 100px; height: 100px; top: -50px; left: -50px; }
+.sun-2 { width: 80px; height: 80px; top: -40px; left: -40px; }
+.sun-3 { width: 60px; height: 60px; top: -30px; left: -30px;  }
+.sun-4 { width: 40px; height: 40px; top: -20px; left: -20px; }
+.sun-5 { width: 20px; height: 20px; top: -10px; left: -10px; }
+
+
+/* облака */
+.cloud {
+    background: radial-gradient(circle at 40% 40%, #ffffff 0%, #71a9fc 80%);
+    border-radius: 50%;
+    z-index: 1;
+}
+.cloud-1 { width: 90px; height: 40px; top: -15px; left: 80px; }
+.cloud-2 { width: 70px; height: 45px; top: -23px; left: 115px; }
+.cloud-3 { width: 70px; height: 35px; top: -20px; left: 150px; }
+
+/* трава */
+.ground {
+    width: 200px;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    background: repeating-linear-gradient(90deg, #b6e86a 0px, #b6e86a 10px, #93cd41 10px, #93cd41 20px);
+    z-index: 10; /* Поверх всего */
+}
+/* Легкий градиент сверху вниз для объема травы */
+.ground::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* трактор */
+
+/* Крыша (трапеция) */
+.roof {
+    width: 65px;
+    height: 12px;
+    background-color: #ea8d1d;
+    top: 68px;
+    left: 48px;
+    /* Делает скошенный правый край */
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    z-index: 5;
+}
+
+/* Опоры крыши */
+.pillar-left {
+    width: 6px;
+    height: 44px;
+    background-color: #f1a532;
+    top: 80px;
+    left: 55px;
+    z-index: 4;
+}
+.pillar-right {
+    width: 6px;
+    height: 30px;
+    background-color: #f1a532;
+    top: 80px;
+    left: 90px;
+    z-index: 4;
+}
+
+/* Красное сиденье */
+.seat {
+    width: 30px;
+    height: 25px;
+    top: 92px;
+    left: 60px;
+    border-left: 7px solid #d83126;
+    border-bottom: 7px solid #d83126;
+    border-bottom-left-radius: 12px;
+    box-sizing: border-box;
+    z-index: 6;
+}
+
+/* Моторный отсек верх (зеленый) */
+.engine-top {
+    width: 58px;
+    height: 15px;
+    background: linear-gradient(to bottom, #a4d99a 0%, #5ca84a 100%);
+    top: 105px;
+    left: 90px;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    z-index: 5;
+}
+
+/* Моторный отсек низ (зеленый) */
+.engine-niz {
+    width: 58px;
+    height: 15px;
+    background: linear-gradient(to bottom, #5ca84a 0%, #2c4527 100%);
+    top: 120px;
+    left: 90px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    z-index: 5;
+}
+
+/* Дно мотора (коричневое с градиентом) */
+.engine-base {
+    width: 55px;
+    height: 25px;
+    background: linear-gradient(to bottom, #754a39 0%, #e2c7b7 50%, #754a39 100%);
+    top: 130px;
+    left: 80px;
+    z-index: 3;
+}
+
+/* Выхлопная труба */
+.exhaust {
+    width: 9px;
+    height: 36px;
+    background: linear-gradient(to right, #da7a15 0%, #fbd29e 100%);
+    top: 70px;
+    left: 126px;
+    z-index: 4;
+}
+
+/* Дым из трубы */
+.smoke {
+    background: radial-gradient(circle at 40% 40%, #ffffff 10%, #6dc6fa 80%);
+    border-radius: 50%;
+    z-index: 3;
+}
+.smoke-1 { width: 9px; height: 9px; top: 56px; left: 128px; }
+.smoke-2 { width: 12px; height: 12px; top: 41px; left: 133px; }
+.smoke-3 { width: 15px; height: 15px; top: 26px; left: 145px; }
+
+/* Большое заднее колесо */
+.wheel-back {
+    width: 55px;
+    height: 55px;
+    background-color: #ebd9b8;
+    border: 8px solid #6c4d3b;
+    border-radius: 50%;
+    top: 115px;
+    left: 45px;
+    box-sizing: border-box;
+    z-index: 8;
+}
+/* Красная точка в заднем колесе */
+.wheel-back::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #d22829;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Маленькое переднее колесо */
+.wheel-front {
+    width: 35px;
+    height: 35px;
+    background-color: #ebd9b8;
+    border: 6px solid #6c4d3b;
+    border-radius: 50%;
+    top: 135px;
+    left: 122px;
+    box-sizing: border-box;
+    z-index: 8;
+}
+/* Красная точка в переднем колесе */
+.wheel-front::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #d22829;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
